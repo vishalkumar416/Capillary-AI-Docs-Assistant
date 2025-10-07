@@ -35,7 +35,7 @@ The chatbot works in three main steps:
    - Saves embeddings in `data/embeddings.npz`.  
 
 4. **Run Chatbot**  
-   - Run `streamlit run app_streamlit.py`  
+   - Run `streamlit run app.py`  
    - Open browser at [http://localhost:8501](http://localhost:8501)  
    - Ask any question about the documentation  
 
@@ -62,9 +62,9 @@ Try asking:
 ## 🔹 How to Run  
 ```bash
 # Create virtual environment
-python -m venv venv
-venv\Scripts\activate   # Windows
-source venv/bin/activate  # Linux/Mac
+python -m venv myenv
+myenv\Scripts\activate   # Windows
+source myenv/bin/activate  # Linux/Mac
 
 # Install dependencies
 pip install -r requirements.txt
@@ -73,4 +73,4 @@ pip install -r requirements.txt
 python scrape.py
 python chunk_and_clean.py
 python create_embeddings.py
-streamlit run app_streamlit.py
+streamlit run app.py
